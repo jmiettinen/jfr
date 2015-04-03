@@ -3,7 +3,7 @@ package fi.eonwe;
 public class JFRStarter {
 
     public static void main(final String[] args) throws Exception {
-        JFR.recordFor(3, "/Users/jmiettin/jfrtemp/2");
+        JFR.recordFor(3); // Record to CWD
         long startTime = System.currentTimeMillis();
 
         int sum = 0;
